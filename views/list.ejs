@@ -1,0 +1,21 @@
+<form action = "/create" method="POST">
+	<div>
+		title:<input type='text' name='title'>
+	</div>
+	<div>
+		content:<textarea name='content'></textarea>
+	</div>
+	<div>
+		<input type='submit' value='SUBMIT'>
+	</div>
+</form>
+
+<% for(var i = 0; i < blogPost.length; i++){ %>
+	<h1> Post <%= i+1 %></h1>
+	<h2><%= blogPost[i].dateTime %></h2>
+	<h2><%= blogPost[i].title %></h2>
+	<h2><%= blogPost[i].content%></h2>
+<% } %>
+
+
+
